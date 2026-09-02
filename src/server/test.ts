@@ -14,8 +14,8 @@ import type {
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 
-import { ROK_CLI, DEFAULT_MODEL, ADAPTER_TYPE, VALID_PROVIDERS } from "../shared/constants.js";
-import { detectModel, resolveProvider, inferProviderFromModel } from "./detect-model.js";
+import { ROK_CLI, ADAPTER_TYPE } from "../shared/constants.js";
+import { detectModel, resolveProvider } from "./detect-model.js";
 
 const execFileAsync = promisify(execFile);
 
